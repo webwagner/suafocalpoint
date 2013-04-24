@@ -1,0 +1,158 @@
+body{
+	background:url("../images/bg.jpg") no-repeat scroll center 0 transparent;
+}
+@font-face{
+	font-family:"Century Gothic";
+	src:url("../fonte/GOTHIC.TTF");
+}
+.meio{
+	margin:auto;
+	width:480px;
+}
+#box-painel-topo{
+	float:left;
+	width:487px;
+	height:102px;
+	margin-top:50px;
+	background:url(../images/box-topo.png);
+}
+#box-painel-corpo{
+	float:left;
+	width:485px;
+	min-height:460px;
+	background:url(../images/cont-box.png) repeat;
+}
+#box-painel-corpo span {
+        float: left;
+        font-family: "Century Gothic";
+        margin: 31px 58px 0;
+        width: 43px;
+}
+#box-painel-corpo img{
+	float:left;
+	margin-left:50px;
+}
+#linha{
+    width:375px;
+    height: 15px;
+    float: left;
+    margin-left:50px;
+    background: url(../images/linha.jpg);
+}
+#border-bottom{
+	width:485px;
+	height:9px;
+	float:left;
+	background:url(../images/border-bottom.png);
+}
+.bt-login{
+	width:75px;
+	height:33px;
+	float:left;
+	margin:20px 335px 12px;
+	background:url(../images/bt-css-login.png) no-repeat;
+	font:bold 14px "Trebuchet MS";
+	color:#FFFFFF;
+	outline:none;
+	border:none;
+}
+.bt-login:hover{
+	background-position:0px -33px;
+}
+.bt-login:active{
+	background-position:0px -66px;
+}
+#user, #pass {
+    border: medium none;
+    float: left;
+    height: 32px;
+    margin-top:20px;
+    padding: 8px 41px 0;
+    width: 168px;
+}
+.hover{
+        background: url(../images/input-user.jpg) no-repeat;
+}
+.hover2{
+        background: url(../images/user-hover.jpg) no-repeat;
+}
+.hover3{
+        background: url(../images/input-pass.jpg) no-repeat;
+}
+.hover4{
+        background: url(../images/pass-hover.jpg) no-repeat;
+}
+.dados-incorretos{
+	float:left;
+	height:50px;
+	border-top:1px solid #F00;
+	border-bottom:1px solid #F00;
+	background:#fff3f2;
+	font-family: "Verdana";
+	font-size:12px;
+	color:#563f3e;
+	width:477px;
+        margin:12px 5px;
+}
+.dados-incorretos strong{
+        display: block;
+}
+.dados-incorretos img{
+	float:left;
+	margin:10px 10px;
+}
+.bt-esqueceu-senha{
+	float:left;
+	width:172px;
+	height:26px;
+	position:relative;
+	z-index:1;
+	cursor:pointer;
+	top:13px;
+	left:50px;
+        width: 100%;
+	outline:none;
+	background:url(../images/bt-esquecer-senha.png) no-repeat;
+}
+.clicado{
+	background:url(../images/bt-esquecer-senha-clicado.png)  no-repeat;
+}
+#recupera-senha {
+float:left;
+    color: #9B9B9B;
+    width:477px;
+    margin-left:4px;
+    background:url(../images/cont.jpg) repeat;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+#recupera-senha span{
+	width:200px;
+	font:bold  12px Verdana, Geneva, sans-serif; 
+}
+#email-recupera{
+	width:241px;
+	height:18px;
+	float:left;
+	padding:8px 20px;
+	margin:10px 50px 0px;
+	background: url(../images/input-email.jpg) no-repeat;
+	border:none;
+}
+#bt-enviar{
+	width:75px;
+	height:33px;
+	float:left;
+	margin:10px -40px;
+	border:none;
+	background:url(../images/bt-css-login.png) no-repeat;
+	font:bold 14px "Trebuchet MS";
+	color:#FFFFFF;
+	outline:none;
+}
+#bt-enviar:hover{
+	background-position:0px -33px;
+}
+#bt-enviar:active{
+	background-position:0px -66px;
+}

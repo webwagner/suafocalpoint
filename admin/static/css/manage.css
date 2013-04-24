@@ -1,0 +1,762 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+li{
+    list-style:none;
+}
+a{
+    outline:0;
+    text-decoration:none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#153f63;
+}
+.meio{
+    width:980px;
+    margin:auto;
+}
+#header{
+    width:100%;
+    height:143px;
+    background: url(../images/bg-topo.jpg) repeat-x;
+}
+#logo{
+    float:left;
+    width:189px;
+    height:128px;
+}
+#login{
+    float:right;
+    margin-top:10px;
+}
+#login span,#login a{
+    display: block;
+    color: #fff;
+}
+#bt-logout{
+    font-weight: bold;
+    height: 23px;
+    padding: 9px 0 0 22px;
+    width: 89px;
+    background:url(../images/bt-logout.png) no-repeat;
+}
+#bt-logout:hover{
+    background-position:0px -33px;
+}
+#bt-logout:active{
+    background-position:0px -33px;
+}
+#footer{
+    width:100%;
+    height:117px;
+    clear:both;
+    background:url(../images/footer.jpg) repeat;
+    font-size:12px;
+}
+#links-footer {
+    float: left;
+    height: 30px;
+    margin-top: 30px;
+    width: 800px;
+    font-weight:900;
+}
+#links-footer li{
+    display:inline;
+}
+#links-footer a{
+    color:#FFF; 
+}
+#copyright{
+    float:left;
+    margin-top:20px;
+    width:800px;
+    color:#FFF;
+}
+#img-footer{
+    float:right;
+    width:116px;
+    height:114px;
+    margin-top:-80px;
+    position:relative;
+    background: url(../images/img-footer.png);
+} 
+#creditos-click{
+    float:right;
+    margin-top:20px;
+}
+.nav{
+    width:235px;
+    height:auto;
+    float:left;
+    margin-top:20px;
+}
+.menu {
+    float:left;
+    width:215px;
+    margin:0px;
+    height:auto;
+    min-height:500px;
+    padding:0 0 50px 0;
+}
+.menu li{
+    float:left;
+    width:210px;
+    height:auto;
+}
+.menu li a{
+    float: left;
+    width:180px;
+    height: 16px;
+    padding: 11px 15px;
+    color:#666666;
+    text-decoration:none;
+    background:url(../images/bg-menu.jpg) repeat;
+    font-family: verdana;
+}
+.menu li a:hover{
+    color:#FFF;
+    background:url(../images/bg-menuh.jpg) repeat;
+}
+.menu li a span{
+    float: left;
+    margin-left:10px;
+}
+.menu li .submenu{
+    background-color: #fff;
+    float: left;
+    height: 65px;
+}
+.menu li .submenu li{
+    float: left;
+    margin: 5px 0 0 40px;
+    width: 150px;
+}
+.menu li .submenu li a{
+    background: none;
+    font-size: 11px;
+    color: #666;
+    float: none;
+    padding: 0;
+}
+.menu li .submenu li a:hover{
+    text-decoration: underline;
+}
+.menu img{
+    float:left;
+    width:auto;
+    height:auto;
+}
+.click {
+    float: left;
+    width:208px;
+    height: 16px;
+    padding: 11px 15px;
+    color:#666666;
+    background:url(../images/bg-menu.jpg) repeat;
+}
+.click span{
+    float: left;
+    margin-left:10px;
+}
+#breadcumbs{
+    width:100%;
+    float:left;
+    height:42px;
+    background:url(../images/bread.jpg);
+}
+#breadcumbs .meio .page{
+    float:left;
+    width:auto;
+    height:22px;
+    margin:10px 0 0 0;
+    padding: 2px 10px 0 7px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    background:url(../images/bread-bg.jpg) repeat-x;
+}
+#breadcumbs .meio .page img{
+    float:left;
+    margin-right:2px;
+}
+#breadcumbs .meio .page span{
+    float:left;
+    color:#666;
+    font-size:12px;
+    padding:2px 0 0 0;
+    text-transform:uppercase;
+    font-family:trebuc, Arial, Helvetica, sans-serif;
+}
+#main{
+    float: left;
+    width: 740px;
+}
+.tit{
+    float:left;
+    width:700px;
+    height:51px;
+    margin:20px;
+    background:url(../images/bg-box-relat.jpg) repeat;
+}
+.tit img{
+    float:left;
+    width:40px;
+    height:40px;
+    margin:10px;
+}
+.tit span{
+    float:left;
+    font:20px "Trebuchet";
+    font-family:trebuc, Arial, Helvetica, sans-serif;
+    margin:15px 10px;
+    text-transform:uppercase;   
+}
+.busca{
+    float:left;
+    width:300px;
+    padding:20px;       
+}
+.busca form{
+    float:left;
+    width:300px;       
+}
+.busca form.representantes{
+    float:left;
+    width:500px;       
+}
+.busca form input, .busca form select{
+    float:left;
+    width:190px;
+    height:20px;   
+    border:1px solid #e0e0e0;    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    margin-right:10px;
+    font-style:italic;
+    color:#a3a3a3;
+    padding:0 0 0 30px;
+    background:url(../images/busca_15.jpg) 5px 0 no-repeat;
+}
+.busca form select{
+    height:22px;
+    background:none;
+    padding-left:10px;
+}
+.busca form input.busca-ok{
+    width:30px;
+    height:22px;
+    border:none;
+    cursor:pointer;
+    background:url(../images/busca_02.png);
+}
+.busca form input.busca-ok:hover{
+    background:url(../images/busca_03.png);
+}
+.add{
+    float:right;
+    width:auto;
+    height:24px;
+    padding:6px 10px 0 7px;
+    margin:20px 40px 20px 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    text-transform:uppercase;
+    border-bottom:1px solid #39531c;
+    border-right:1px solid #5c8331;
+    background:url(../images/bt-add_12.jpg);
+}
+.add:hover{
+    background:#a3e05d;
+    background-image:none;
+}
+.add-salvar{
+    float:left;
+    margin-left:0;
+}
+.add a{
+    font-size:14px;
+    color:#2c5300;
+    font-weight:bold;
+    text-decoration:none;
+    font-family:trebuc, Arial, Helvetica, sans-serif;
+}
+.add img{
+    float:left;
+    margin:1px 5px 0 0;
+}
+.add-arquivo{
+    float:left;
+    margin:0;
+}
+.add-categoria{
+    margin-right:-10px;
+    border-bottom:1px solid #264c5b;
+    border-right:1px solid #44768d;
+    background:url(../images/add-cat.jpg) repeat-x #5db5da;
+}
+.add-categoria:hover{
+    background:#a5d7f8;
+}
+.add-categoria a{
+    color:#01425e;
+}
+#listagem{
+    float:left;
+    width:700px;
+    height:auto;
+    margin:0 0 20px 20px;
+}
+#listagem .lg-status{
+    float:left;
+    font-size:10px;
+}
+#listagem .lg-status span, #listagem .lg-status img{
+    float:left;
+    color:#333;
+}
+#listagem .lg-status span.atv{
+    padding-right:20px;
+}
+#listagem table{
+    float:left;
+    margin-top:10px;
+}
+#listagem table tr{
+    height:30px;
+}
+#listagem table tr.cabecalho{
+    background:url(../images/bg-tr_03.jpg) repeat-x;
+}
+#listagem table tr.cabecalho td{
+    color:#fff;
+    font-weight:bold;
+    font-size:12px;
+    padding:0 0 0 10px;
+    text-shadow:1px 1px 0 #4a4a4a;
+}
+#listagem table tr.cabecalho td.id{
+    padding:0;
+    background:#3d3d3d;
+}
+#listagem table tr.cabecalho td.id input{
+    border:none;
+}
+#listagem table tr.iten-a{
+    background:#e5e5e5;
+}
+#listagem table tr.iten-pai{
+    background:url(../images/show.png) 60px 10px  no-repeat #e5e5e5;
+}
+#listagem table tr.iten-pai td a.show-sub{
+    padding-left:20px;
+}
+
+#listagem table tr.iten-a input, #listagem table tr.iten-b input{
+    float:right;
+    width:32px;
+    height:22px;
+    text-align:center;
+    font-size:12px;
+    color:#a3a3a3;
+    margin:0 10px 0 0;
+    border:1px solid #e0e0e0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#listagem table tr.iten-a td, #listagem table tr.iten-b td{
+    border-right:1px dotted #444;
+    padding:0 0 0 10px;
+}
+#listagem table tr.iten-a td a, #listagem table tr.iten-b td a,#listagem table tr.iten-a td,#listagem table tr.iten-b td{
+    color:#333;
+    font-size:12px;
+    text-decoration:none;
+}		
+#listagem table tr.iten-a td a.show-produto, #listagem table tr.iten-b td a.show-produto{
+    font-size:10px;
+    padding-left:20px;
+    background:url(../images/show-produto.png) left no-repeat;
+}
+#listagem table tr.iten-sub td a.sub{
+    padding-left:10px;
+}
+#listagem table tr.iten-a td.last, #listagem table tr.iten-b td.last{
+    border:none;
+}
+#listagem table tr.iten-a td.status, #listagem table tr.iten-b td.status, #listagem table tr.cabecalho td.status{
+    padding-left:0;
+}
+#listagem table tr.iten-a td.id, #listagem table tr.iten-b td.id{
+    padding:0 0 0 10px;
+}
+#listagem table tr.iten-a td img.down, #listagem table tr.iten-a td img.up, #listagem table tr.iten-b td img.down, #listagem table tr.iten-b td img.up{
+    padding:0;
+}
+#listagem table tr.iten-a{
+    background:#e5e5e5;
+}
+#listagem table tr.iten-pai{
+    background:url(../images/show.png) 60px 10px  no-repeat #e5e5e5;
+}
+#listagem table tr.iten-pai td a.show-sub{
+    padding-left:20px;
+}
+
+#listagem table tr.hide-sub{
+    background-image:url(../images/hide.png);
+}
+#listagem table tr.iten-sub{
+    background:#cacaca;
+}
+#listagem table tr.iten-sub{
+    background:#cacaca;
+}
+#listagem table tr td.td-sub{
+    margin:0;
+    padding:0;
+}
+#listagem table tr td.td-sub table.table-sub, #listagem table tr td.td-sub table.table-sub tbody{
+    margin:0;
+    padding:0;
+}
+#listagem table tr.pagination td img{
+    float:left;
+}
+#listagem table tr.pagination td{
+    background:#e4e4dc;
+}
+#listagem table tr.pagination td span{
+    float:left;
+    color:#576a73;
+    font-size:10px;
+    padding-top:15px;
+    text-transform:uppercase;
+}
+#listagem table tr.pagination td ul{
+    float:right;
+    width:auto;
+}
+#listagem table tr.pagination td ul.margem-menor{
+    margin:0;
+    padding:0;
+}
+#listagem table tr.pagination td ul li.prev, #listagem table tr.pagination td ul li.next{
+    width:auto;
+    height:auto;
+    margin:0;
+}
+#listagem table tr.pagination td ul li{
+    float:left;
+    height:26px;
+    margin:6px 0 0 5px;
+}
+#listagem table tr.pagination td ul li a{
+    float:left;
+    width:18px;
+    height:20px;
+    color:#333333;
+    font-size:11px;
+    font-weight:bold;
+    padding:6px 0 0 9px;
+    text-decoration:none;
+    background:url(../images/pag.jpg);
+}
+#listagem table tr.pagination td ul li a:hover, #listagem table tr.pagination td ul li a.hover{
+    background:url(../images/pag-hover.jpg);
+}
+#listagem table tr.pagination td ul li.pag-proxima a,#listagem table tr.pagination td ul li.pag-anterior a{
+    height: 26px;
+    text-indent: -9999px;
+}
+#listagem table tr.pagination td ul li.pag-proxima a{
+    background:url(../images/next.jpg) no-repeat;
+    width: 84px;
+}
+#listagem table tr.pagination td ul li.pag-proxima a:hover{
+    background:url(../images/next.png) no-repeat;
+}
+#listagem table tr.pagination td ul li.pag-anterior a:hover{
+    background:url(../images/prev.png) no-repeat;
+}
+#listagem table tr.pagination td ul li.pag-anterior a{
+    background:url(../images/prev.jpg) no-repeat;
+    width: 92px;
+}
+#listagem table tr.pagination td ul li.prev a, #listagem table tr.pagination td ul li.next a{
+    width:auto;
+    height:auto;
+    background:none;
+}
+#listagem table tr.selection {
+    height:35px;
+    background:url(../images/bg-selection_03.jpg) no-repeat;
+}
+#listagem table tr.selection td{
+    height:35px;
+}
+#listagem table tr.selection td img, #listagem table tr.selection td a{
+    padding:0;
+    margin:0;
+    float:left;
+}
+#listagem table tr.selection td select{
+    float:left;
+    width:215px;
+    height:24px;
+    color:#333;
+    margin:6px 5px 0 0;
+    font-size:12px;
+    border:1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#listagem table tr.selection td input.ok{
+    width:30px;
+    height:22px;
+    border:none;
+    margin:6px 0 0 0;
+    cursor:pointer;
+    background:url(../images/busca_02.png);
+}
+#listagem table tr.selection td input.ok:hover{
+    background:url(../images/busca_03.png);
+}
+#listagem table tr.selection td img.seta{
+    margin-left:5px;
+}
+#listagem table tr.selection td img.sel-all{
+    margin-top:6px;
+}
+#listagem .forms-t{
+    height:15px;
+    overflow:hidden;
+    float:left;
+    width:650px;
+    padding:7px 10px;
+    border:1px solid #dddddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#listagem .forms-h{
+    float:left;
+    width:650px;
+    height:auto;
+    overflow:auto;
+    padding:7px 10px;
+    border:1px solid #de8026;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#listagem .forms-t h2{
+    float:left;
+    width:100%;
+    color:#808080;
+    font-size:12px;
+    cursor:pointer;
+    text-transform:uppercase;
+    background:url(../images/formclose.jpg) right no-repeat;
+}
+#listagem .forms-h h2{
+    color:#de8026;
+    font-size:12px;
+    text-transform:uppercase;
+    background:url(../images/formopen.jpg) right no-repeat;
+}
+.form-c{
+    float:left;
+    width:700px;
+    padding:0 0 50px 40px;
+}
+.form-c label{
+    float:left;
+    width:700px;
+    padding:5px 0;
+}
+.form-c label.medio{
+    width:270px;
+}
+.form-c label.medio input{
+    width:200px;
+}
+.form-c label.grande{
+    width:415px;
+}
+.form-c label.five{
+    width:320px;
+}
+.form-c label a.lupa{
+    position:relative;
+    float:left;
+    left:400px;
+    top:-40px;
+}
+.form-c label.permissoes{
+    width:680px;
+    margin-left:-15px;
+    padding:10px 0 10px 15px;
+    border-bottom:1px solid #d7d7d7;
+}
+.form-c label.permissoes span.span-c{
+    width:auto;
+    float:left;
+    padding:5px 20px 0 0;
+    margin:2px 0 0 0;
+}
+.form-c label.permissoes .ferramentas{
+    float:left;
+    width:100%;
+    margin:0 0 0 0;
+    padding:0 0 0 20px;
+}
+.form-c label.permissoes .ferramentas label{
+    margin:0;
+    padding:0;
+    width:35%;
+    float:left;
+}
+.form-c label.permissoes .ferramentas span.span-c{
+    color:#333;
+    font-style:italic;
+    font-weight:normal;
+}
+.form-c label.permissoes input[type=checkbox]{
+    width:22px;
+}
+.form-c label input, .form-c label textarea, .form-c label select, .form-c label input.file, .form-c label div.pvw-seo{
+    float:left;
+    width:400px;
+    height:30px;
+    border:1px solid #e0e0e0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+.form-c label input.all, .form-c label textarea.all{
+    width:620px;
+}
+.form-c label input.seo, .form-c label textarea.seo{
+    width:550px;
+}
+.form-c label div.pvw-seo{
+    width:550px;
+    height:50px;
+    padding:20px;
+}
+.form-c label div.pvw-seo a.pvw-seo-title{
+    color:#2200C1;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-c label div.pvw-seo a.pvw-seo-link{
+    color:#0E774A;
+    font-size:12px;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-c label div.pvw-seo a.pvw-seo-cache{
+    color:#36C;
+    font-size:12px;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-c label div.pvw-seo span.pvw-seo-desc{
+    color:#000;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-c label span#nc, .form-c label span#ncd, .form-c label span.nc-t{
+    float:left;
+    padding:10px 0 0 5px;
+}
+.form-c label span#nc, .form-c label span#ncd{
+    font-weight:bold;
+    position:relative;
+}
+.form-c label input.page{
+    background:#eeeeee;
+}
+.form-c label.grande input[type=file]{
+    width:320px;
+}
+.form-c label select{
+    width:250px;
+}
+.form-c label textarea{
+    height:50px;
+}
+.form-c label input[type=radio]{
+    width:20px;
+}
+.form-c label input, .form-c label input.five-i{
+    width:300px;
+}
+.form-c label font{
+    float:left;
+    clear:right;
+}
+.form-c label font.sim{
+    color:#11aa22;
+    padding-top:7px;
+}
+.form-c label font.nao{
+    color:#a21111;
+    padding-top:7px;
+}
+.form-c label span.span-c{
+    float:left;
+    width:100%;
+    color:#808080;
+    font-size:12px;
+    padding:10px 0;
+    font-weight:bold;
+    position:relative;
+}
+.form-c label font{
+    float:left;
+    color:#f38120;
+    font-size:12px;
+    margin-right:3px;
+    font-weight:bold;
+}
+.form-c h3{
+    color:#bfbfbf;
+    font-size:12px;
+    margin:10px 0 0 0;
+    text-transform:uppercase;
+}
+#bt-salvar-form{
+    color: #2C5300;
+    font-family: trebuc,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    float: left;
+    padding: 0 5px;
+}
+.error,.txt-msg{
+    color: red;
+}
+.txt-msg{
+    font-size: 14px;
+    margin: 15px 0 0 20px;
+}

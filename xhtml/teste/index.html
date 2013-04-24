@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+	.file-wrapper {
+	  cursor: pointer;
+	  display: inline-block;
+	  overflow: hidden;
+	  position: relative;
+	}
+	.file-wrapper .button {
+		float:left;
+		width:184px;
+		height:30px;
+		text-indent:-3000px;
+		background:url(selecione.jpg);
+	}
+	.file-wrapper:hover .button {
+		float:left;
+		width:184px;
+		height:30px;
+		text-indent:-3000px;
+		background:url(selecione-h.jpg);
+	}
+	.file-wrapper:active .button {
+		float:left;
+		width:184px;
+		height:30px;
+		text-indent:-3000px;
+		background:url(selecione-a.jpg);
+	}
+	.file-wrapper input {
+	  cursor: pointer;
+	  height: 100%;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.file-wrapper input {
+	  filter: alpha(opacity=1);
+	  -moz-opacity: 0.01;
+	  opacity: 0.01;
+	}
+</style>
+<script type="text/javascript">
+fileInputs = function() {
+  var $this = $(this),
+      $val = $this.val(),
+      valArray = $val.split('\\'),
+      newVal = valArray[valArray.length-1],
+      $button = $this.siblings('.button'),
+      $fakeFile = $this.siblings('.file-holder');
+  if(newVal !== '') {
+    $button.text('Photo Chosen');
+    if($fakeFile.length === 0) {
+      $button.after('' + newVal + '');
+    } else {
+      $fakeFile.text(newVal);
+    }
+  }
+};
+
+$(document).ready(function() {
+  $('.file-wrapper input[type=file]')
+  .bind('change focus click', fileInputs);
+});
+</script>
+</head>
+
+<body>
+<span class="file-wrapper">
+  <input type="file" name="photo" class="photo" />
+  <span class="button">Choose a Photo</span>
+</span>
+</body>
+</html>

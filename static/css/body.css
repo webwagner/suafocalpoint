@@ -1,0 +1,380 @@
+/*RESET*/
+body { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666; margin:0; padding:0; background:#124c9c;}
+
+a { cursor:pointer; text-decoration:none; }
+
+img { border:none; }
+
+li { list-style:none; }
+
+input, select, textarea, select{color:#7b7a75;}
+
+.center{margin:0 auto; width:980px;}
+/*RESET*/
+
+/*CABEÇALHO*/
+.header{
+	float:left;
+	width:100%;
+	height:61px;
+	position:absolute;
+	background:url(../img/bg-header.png);
+}
+	.header .center .login{
+		float:right;
+		width:630px;
+		padding-top:10px;
+	}
+	.header .center .login a{
+		float:left;
+		color:#fff;
+		font-weight:bold;
+		text-align:center;
+	}
+        .header .center .login #box-bt-entrar{
+            float: right;
+        }
+        .header .center .login #box-bt-entrar a{
+            float: right;
+            margin-right: 15px;
+        }
+	.header .center .login img{
+		float:left;
+	}
+	.header .center .login form .campo{
+		float:left;
+		width:190px;
+		margin-right:10px;
+	}
+	.header .center .login form .campo label.error{
+		float:left;
+		width:auto;
+		color:#fff;
+		font-size:11px;
+		font-weight:bold;
+	}
+	.header .center .login form .campo input{
+		float:left;
+		width:180px;
+		height:28px;
+		border:none;
+		margin:0 10px 0 0;
+		padding:0 0 0 10px;
+	}
+	.header .center .login form .campo input.login{
+		background:url(../img/login_03.jpg) left no-repeat #fff;
+	}
+	.header .center .login form .campo input.senha{
+		background:url(../img/login_05.jpg) left no-repeat #fff;
+	}
+	.header .center .login form .campo input.senha-b, .header .center .login form .campo input.login-b{
+		background-image:none;
+		background-color:#fff;
+	}
+	.header .center .login form input[type=submit]{
+		float:left;
+		width:41px;
+		height:28px;
+		cursor:pointer;
+		border:none;
+		margin-right:5px;
+		background:url(../img/login-header-ok.jpg);
+	}
+/*CABEÃ‡ALHO*/
+
+/*CONTEUDO*/
+.content{
+	float:left;
+	width:100%;
+	height:auto;
+	background:#000;
+	margin:-10px 0 0 0;
+	padding:70px 0 0 0;
+	overflow:hidden;
+	background:url(../img/bg-home.jpg) -875px 40px;
+}
+	.content .center{
+		width:980px;
+		height:auto;
+		padding-left:20px;
+		background:#f5f5f5;
+		overflow:hidden;
+		margin-top:-10px;
+	}
+	.content .center .slideshow{
+		float:left;
+		width:570px;
+		height:400px;
+		padding:50px 0 0 0;
+	}
+	.content .center .slideshow .viewport {
+		padding:0;
+		float:left;
+		width:470px;
+		height:400px;
+		overflow:hidden;
+		position:relative;
+		margin:0 50px 0 40px;
+	}
+	.content .center .slideshow .buttons {
+		width:500px;
+		display: block;
+		overflow: hidden;
+		margin:-200px 0 0 0;
+		text-indent: -999em;
+	}
+	.content .center .slideshow .next {
+		padding:0;
+		top:-20px;
+		right:10px;
+		width:40px;
+		height:40px;
+		float:right;
+		z-index:99999;
+		position:relative;
+		background:url(../img/next.jpg);
+	}
+	.content .center .slideshow .prev {
+		padding:0;
+		top:-20px;
+		left:-10px;
+		float:left;
+		width:40px;
+		height:40px;
+		position:relative;
+		background:url(../img/prev.jpg);
+	}
+	.content .center .slideshow .overview {
+		margin:0;
+		padding:0;
+		width:470px;
+		list-style:none;
+		position:absolute;
+	 }
+	.content .center .slideshow .overview li{
+		float:left;
+		height:auto;
+		width: 470px;
+		margin-right:10px;
+	}
+	.content .center .desc{
+		float:left;
+		width:390px;
+	}
+	.content .center .desc a.logo{
+		float:left;
+		width:100%;
+		margin:20px 0;
+	}
+	.content .center .banner{
+		float:left;
+		padding:25px 0;
+	}
+	.content .center .convide{
+		float:left;
+		width:470px;
+		text-align:center;
+		margin:0 0 80px 20px;
+	}
+	.content .center .convide h2{
+		color:#065ed8;
+		font-size:18px;
+		margin:25px 0 0 0;
+	}
+	.content .center .desc h1{
+		color:#124b9a;
+		font-size:36px;
+		font-weight:normal;
+	}
+	.content .center .desc p, .content .center .convide p{
+		color:#999;
+		font-size:13px;
+	}
+	.content .center .convide p{
+		margin:10px 0;
+	}
+	.content .center .chamada-cadastro{
+		float:left;
+		width:700px;
+		height:45px;
+		text-align:center;
+		background:#e6edf7;
+		margin:0 20px 0 0;
+		border:1px solid #d3dae5;
+		border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-khtml-border-radius: 2px;
+		behavior: url(border-radius.htc);
+	}
+	.content .center .chamada-cadastro p{
+		color:#294b7b;
+		font-size:17px;
+		font-weight:bold;
+		margin:12px 0 0 0;
+	}
+/*CONTEUDO*/
+
+/*RODAPE*/
+.footer{
+	float:left;
+	width:100%;
+	height:117px;
+	background:url(../img/bg-footer.jpg);
+}
+.footer .center .click-house{
+	float:right;
+	width:200px;
+	text-align:right;
+}
+.footer .center .click-house .click{
+	float:right;
+	margin:20px 0 0 0;
+}
+.footer .center .click-house .house{
+	float:right;
+	margin:-55px -12px 0 0;
+}
+.footer .center .menu, .footer .center .copyright{
+	float:left;
+	width:680px;
+	padding-bottom:20px;
+	border-bottom:1px dotted #fff;
+}
+.footer .center .copyright{
+	border:none;
+	color:#fff;
+	padding-top:10px;
+}
+.footer .center .menu ul{
+	margin:0;
+	padding:30px 0 0 0;
+}
+.footer .center .menu ul li{
+	margin:0;
+	float:left;
+	height:10px;
+	padding:0 9px 0 10px;
+	border-right:1px solid #fff;
+}
+.footer .center .menu ul li.first{
+	padding-left:0;
+}
+.footer .center .menu ul li.last{
+	border:none;
+	padding-right:0;
+}
+.footer .center .menu ul li a{
+	color:#fff;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	margin:-3px 0 0 0;
+}
+.content .box-left form div.planos{
+	width:100%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.content .box-left  form div.planos .plano{
+	float:left;
+	width:145px;
+	height:185px;
+	text-align:center;
+	border:1px solid #999999;
+	border-top:none;
+	margin:10px 0 0 0;
+}
+.content .box-left form div.planos .plano-h,
+.content .box-left form div.planos .plano:hover{
+	float:left;
+	width:145px;
+	height:185px;
+	text-align:center;
+	border:1px solid #c4f983;
+	border-top:none;
+	margin:10px 0 0 0;
+}
+.content .box-left form div.planos .plano .plano-title{
+	float:left;
+	width:100%;
+	height:26px;
+	color:#363636;
+	font-weight:bold;
+	padding:7px 0 0 0;
+	margin:0 0 0 -1px;
+	border:1px solid #bfbfbf;
+	background:url(../img/plano-title.jpg);
+}
+.content .box-left form div.planos .plano-h .plano-title,
+.content .box-left form div.planos .plano:hover .plano-title{
+	float:left;
+	width:100%;
+	height:26px;
+	color:#244500;
+	font-weight:bold;
+	padding:7px 0 0 0;
+	margin:0 0 0 -1px;
+	border:1px solid #c7ff82;
+	background:url(../img/plano-title-h.jpg);
+}
+.content .box-left form div.planos .plano span{
+	float:left;
+	width:100%;
+	color:#363636;
+	font-size:12px;
+	padding-top:10px;
+}
+.content .box-left form div.planos .plano-h span,
+.content .box-left form div.planos .plano:hover span{
+	float:left;
+	width:100%;
+	color:#244500;
+	font-size:12px;
+	padding-top:10px;
+}
+.content .box-left form div.planos .plano label{
+	float:left;
+	width:100%;
+	height:20px;
+}
+.content .box-left form div.planos .plano input[type=radio]{
+	width:25px;
+}
+.content .center .box-left form input[type="submit"].renovar{
+    background:url(../img/bt-renovar.jpg);
+    width:127px;
+    height:44px;
+    margin: 20px 0 100px 313px;
+}
+.content .center .box-left form input[type="submit"].renovar:hover{
+    background:url(../img/bt-renovar.jpg);
+    background-position: 0 88px;
+}
+.content .center .box-left form input[type="submit"].renovar:active{
+    background:url(../img/bt-renovar.jpg);
+    background-position: 0 44px;
+}
+/*RODAPE*/
+#box-voltar{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#voltar{
+    float: right;
+    height: 26px;
+    padding: 6px 0 0 0;
+    text-align: center;
+    width: 83px;
+    background:url(../img/buscar_11.jpg);
+    margin-left: 0;
+    border: medium none;
+    color: #244500;
+    cursor: pointer;
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    

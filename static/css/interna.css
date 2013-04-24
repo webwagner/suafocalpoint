@@ -1,0 +1,617 @@
+.content{
+	float:left;
+	width:100%;
+	height:auto;
+	background:#000;
+	margin:-10px 0 0 0;
+	padding:70px 0 0 0;
+	overflow:hidden;
+	background:url(../img/bg-home.jpg) -870px bottom no-repeat #92cffd;
+}
+.content .center{
+	height:auto;
+	min-height:600px;
+	background:#fff;
+}
+.content .center .bread{
+	float:left;
+	width:100%;
+	font-size:13px;
+	padding:0 0 7px 0;
+	margin:20px 0 20px 0;
+	border-bottom:1px solid #e5ffc4;
+}
+.content .center .bread-none{
+	border:none;
+}
+.content .center .bread span{
+	color:#124b9a;
+}
+.content .center .bread a{
+	color:#666;
+}
+.content .center .box-left{
+	float:left;
+	width:320px;
+	background:url(../img/bg-left.gif) right top no-repeat;
+}
+.content .center .box-left p, .content .center .box-right p{
+	float:left;
+	width:90%;
+	font-size:15px;
+}
+.content .center .box-right a.voltar-inicio{
+	float:left;
+	width:177px;
+	height:34px;
+	margin-left:180px;
+	text-indent:-3000px;
+	background:url(../img/voltar-inicio_03.jpg);
+}
+.content .center .box-right a.voltar-inicio-left{
+	margin-left:0;
+}
+.content .center .box-right a.voltar-inicio:hover{
+	background:url(../img/voltar-inicio_06.jpg);
+}
+.content .center .box-right a.voltar-inicio:active{
+	background:url(../img/voltar-inicio_03.jpg);
+}
+.content .center .box-right a.faq{
+	float:left;
+	width:577px;
+	height:76px;
+	text-indent:-3000px;
+	background:url(../img/faq_03.jpg);
+}
+.content .center .box-right p a.faq:hover{
+	background:url(../img/faq_03_03.jpg);
+}
+.content .center .box-right p a.faq:active{
+	background:url(../img/faq_03.jpg);
+}
+.content .center .box-left p.blue{
+	color:#124b9a;
+}
+.content .center .box-left  form label{
+	float:left;
+}
+.content .center .box-left  form input[type=submit]{
+	float:left;
+	width:46px;
+	height:31px;
+	border:none;
+	cursor:pointer;
+	margin:0 0 0 10px;
+	background:url(../img/buscacorretor-ok.jpg);
+}
+.content .center .box-left  form label select{
+	width:210px;
+	height:32px;
+	border:none;
+	padding:5px 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-right:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	background:url(../img/buscacorretor.jpg);
+}
+.content .center .box-left ul{
+	float:left;
+	padding:0;
+}
+.content .center .box-left ul li{
+	float:left;
+	width:215px;
+	height:24px;
+	margin:8px 0;
+	padding:10px 0 0 40px;
+	background:url(../img/bg-menu-cadastro-off.jpg);
+}
+.content .center .box-left ul.cad-corretor li{
+        background:url(../img/bg-menu-cadastro-off2.jpg);
+}
+.content .center .box-left ul.cad-corretor li.hover, .content .center .box-left ul.cad-corretor li:hover{
+	background:url(../img/bg-menu-cadastro2.jpg);
+}
+.content .center .box-left ul li.hover, .content .center .box-left ul li:hover{
+	background:url(../img/bg-menu-cadastro.jpg);
+}
+.content .center .box-left ul li a{
+	color:#999;
+	font-size:13px;
+}
+.content .center .box-left ul li.hover a, .content .center .box-left ul li:hover a{
+	color:#244500;
+}
+.content .center .box-right{
+	float:left;
+	width:600px;
+	padding:0 0 0 30px;
+}
+.content .center .box-right h2{
+	float:left;
+	width:600px;
+	color:#999;
+	font-size:17px;
+	font-weight:normal;
+	margin-top:0;
+}
+.content .center .box-right .corretor{
+	float:left;
+	width:100%;
+	margin:0 0 20px 0;
+}
+.content .center .box-right .corretor .box-img-phpthumb{
+        float: left;
+}
+.content .center .box-right .corretor img{
+	float:left;
+}
+.content .center .box-right p, .content .center .box-right span{
+	color:#999;
+}
+.content .center .box-right .corretor p{
+	width:60%;
+	margin:0;
+	color:#999;
+	padding:4px 0 0 10px;
+}
+.content .center .box-right  form{
+	float:left;
+	width:100%;
+}
+.content .center .box-right  form label{
+	float:left;
+	width:300px;
+}
+.content .center .box-right  form label.cadastro-all{
+	width:590px;
+}
+.content .center .box-right  form div.planos{
+	width:100%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.content .center .box-right  form div.planos .plano{
+	float:left;
+	width:145px;
+	height:185px;
+	text-align:center;
+	border:1px solid #999999;
+	border-top:none;
+	margin:10px 0 0 0;
+}
+.content .center .box-right  form div.planos .plano-h,
+.content .center .box-right  form div.planos .plano:hover{
+	float:left;
+	width:145px;
+	height:185px;
+	text-align:center;
+	border:1px solid #c4f983;
+	border-top:none;
+	margin:10px 0 0 0;
+}
+.content .center .box-right  form div.planos .plano .plano-title{
+	float:left;
+	width:100%;
+	height:26px;
+	color:#363636;
+	font-weight:bold;
+	padding:7px 0 0 0;
+	margin:0 0 0 -1px;
+	border:1px solid #bfbfbf;
+	background:url(../img/plano-title.jpg);
+}
+.content .center .box-right  form div.planos .plano-h .plano-title,
+.content .center .box-right  form div.planos .plano:hover .plano-title{
+	float:left;
+	width:100%;
+	height:26px;
+	color:#244500;
+	font-weight:bold;
+	padding:7px 0 0 0;
+	margin:0 0 0 -1px;
+	border:1px solid #c7ff82;
+	background:url(../img/plano-title-h.jpg);
+}
+.content .center .box-right  form div.planos .plano span{
+	float:left;
+	width:100%;
+	color:#363636;
+	font-size:12px;
+	padding-top:10px;
+}
+.content .center .box-right  form div.planos .plano-h span,
+.content .center .box-right  form div.planos .plano:hover span{
+	float:left;
+	width:100%;
+	color:#244500;
+	font-size:12px;
+	padding-top:10px;
+}
+.content .center .box-right  form div.planos .plano label{
+	float:left;
+	width:100%;
+	height:20px;
+}
+.content .center .box-right  form div.planos .plano input[type=radio]{
+	width:25px;
+}
+.content .center .box-right  form label.cadastro-ddd{
+	width:60px;
+}
+.content .center .box-right  form label.cadastro-small{
+	width:100px;
+}
+.content .center .box-right  form label.cadastro{
+	width:370px;
+}
+.content .center .box-right  form label.cadastro-m{
+	width:200px;
+	margin:0 0 10px 20px;
+}
+.content .center .box-right  form label.cadastro-m-ddd{
+	width:215px;
+	margin:0 20px 0 10px;
+}
+.content .center .box-right  form label span{
+	font-size:15px;
+}
+.content .center .box-right  form label input{
+	width:290px;
+	height:30px;
+	margin-top:5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-left:1px solid #a8a8a8;
+	border-top:1px solid #a8a8a8;
+	border-right:1px solid #d8d8d8;
+	border-bottom:1px solid #d8d8d8;
+}
+.content .center .box-right  form label .div-input-file{
+	background:url(../img/foto_17.jpg) no-repeat;
+	float:left;
+	width:184px;
+	height:30px;
+	margin-top:10px;
+	position:relative;
+	z-index:60;
+	cursor:pointer;
+}
+.content .center .box-right  form label .div-input-file:hover{
+	z-index:40;
+}
+.content .center .box-right  form label input[type=file], .content .center .box-right  form label input[type=file]:hover, .content .center .box-right  form label input[type=file]:focus, .content .center .box-right  form label input[type=file]:active, .content .center .box-right  form label input.file-original{
+	opacity: 0;
+	-moz-opacity: 0.0;
+	filter: alpha(opacity=00);
+	font-size:18px;
+	border:none;
+	cursor:hand;
+	float:left;
+	width:20px;
+	height:30px;
+	position:relative;
+	margin:-30px 0 0 0;
+	z-index:50;
+	border:0;
+}
+.content .center .box-right  form label input:hover, .content .center .box-right  form label input:focus{
+	width:290px;
+	height:30px;
+	margin-top:5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-left:1px solid #aacdea;
+	border-top:1px solid #aacdea;
+	border-right:1px solid #e0ecf7;
+	border-bottom:1px solid #e0ecf7;
+	background:url(../img/input-focus.gif) no-repeat #f9fbfd;
+}
+.content .center .box-right  form input.enviar-senha{
+	float:left;
+	width:127px;
+	height:44px;
+	border:none;
+	cursor:pointer;
+	margin:20px 0 0 0;
+	background:url(../img/enviar.gif);
+}
+.content .center .box-right  form input.enviar-senha:hover{
+	background-position: 0 -44px;
+}
+.content .center .box-right  form input.enviar-senha:active{
+	background-position: 0 -88px;
+}
+.content .center .box-right  form input.convide{
+	float:right;
+	margin-bottom:100px;
+}
+.content .center .box-right  form input.avancar{
+	float:right;
+	margin:100px 0;
+	background:url(../img/avancar.gif);
+}
+.content .center .box-right  form input.avancar:hover{
+	background-position: 0 -44px;
+}
+.content .center .box-right  form input.avancar:active{
+	background-position: 0 -88px;
+}
+.content .center .box-right  form label.cadastro-m select, .content .center .box-right  form label.cadastro-small select{
+	width:100%;
+	height:32px;
+	border:none;
+	color:#000;
+	padding:5px 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-right:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	background:url(../img/buscacorretor.jpg);
+}
+.content .center .box-right  form label.cadastro-all select{
+	width:250px;
+	height:32px;
+	border:none;
+	color:#000;
+	padding:5px 0;
+	margin: 5px 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-right:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	background:url(../img/buscacorretor.jpg);
+}
+.content .center .box-right  form label.cadastro input,
+.content .center .box-right  form label.cadastro-m-ddd input,
+.content .center .box-right  form label.cadastro-m input,
+.content .center .box-right  form label.cadastro-small input,
+.content .center .box-right  form label.cadastro-ddd input,
+.content .center .box-right  form label.cadastro-all input{
+	width:100%;
+}
+.content .center .box-right  form label.textarea{
+	float:left;
+	width:600px;
+	height:auto;
+}
+.content .center .box-right  form label.textarea textarea{
+	width:600px;
+	height:80px;
+	margin-top:5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	behavior: url(border-radius.htc);
+	border-left:1px solid #a8a8a8;
+	border-top:1px solid #a8a8a8;
+	border-right:1px solid #d8d8d8;
+	border-bottom:1px solid #d8d8d8;
+}
+.content .center .box-right  form label input[type=radio]:hover{
+	width:20px;
+}
+.content .center .box-right  form label textarea{
+	height:150px;
+}
+.content .center .box-right  form p.confirm{
+	color:#450000;
+	font-size:13px;
+	width:100%;
+	text-align:right;
+}
+.content .center .box-right  form .radio{
+	float:left;
+}
+.content .center .box-right  form .alinha-radio{
+	float:left;
+	width:auto;
+}
+.content .center .box-right  form .radio label{
+	float:left;
+	width:100px;
+}
+.content .center .box-right  form .radio input,
+.content .center .box-right  form .radio input:hover,
+.content .center .box-right  form .radio input:active,
+.content .center .box-right  form .radio input:focus,
+.content .center .box-right  form .radio span{
+	float:left;
+	width:20px;
+}
+.content .center .box-right  form .radio span{
+	float:left;
+	width:auto;
+	margin:10px 0 0 0;
+}
+.content .center .box-right  form .radio span.span-abs{
+	position:absolute;
+}
+.content .center .box-right  form .foto, .content .center .box-right  form .foto span{
+	float:left;
+	width:300px;
+}
+.content .center .box-right  form .foto span.tx{
+	width:160px;
+	font-size:12px;
+	line-height:18px;
+	margin:5px 0 3px 0;
+}
+.content .center .box-right  form .foto span.tx font{
+	font-size:10px;
+}
+.content .center .box-right  form .foto{
+	float:left;
+	height:auto;
+	margin-top:10px;
+}
+.content .center .box-right  form .foto img{
+	float:left;
+	margin:10px 10px 0 0;
+}
+.content .center .box-right  form .foto span{
+	float:left;
+}
+.content .center .box-right  form .foto span.file-wrapper {
+  width:184px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin-top:10px;
+}
+.content .center .box-right  form .foto span.file-wrapper .button {
+	float:left;
+	width:184px;
+	height:30px;
+	text-indent:-3000px;
+	background:url(../img/selecione.jpg);
+}
+.content .center .box-right  form .foto span.file-wrapper:hover .button {
+	float:left;
+	width:184px;
+	height:30px;
+	text-indent:-3000px;
+	background:url(../img/selecione-h.jpg);
+}
+.content .center .box-right  form .foto span.file-wrapper:active .button {
+	float:left;
+	width:184px;
+	height:30px;
+	text-indent:-3000px;
+	background:url(../img/selecione-a.jpg);
+}
+.content .center .box-right  form .foto span.file-wrapper input {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.content .center .box-right  form .foto span.file-wrapper input {
+  filter: alpha(opacity=1);
+  -moz-opacity: 0.01;
+  opacity: 0.01;
+}
+.content .center .all{
+	float:left;
+	width:90%;
+}
+.content .center .all{
+	font-size:16px;
+}
+.content .center .all h1{
+	color:#124b9a;
+	font-size:30px;
+	font-weight:normal;
+}
+.content .center .all h3{
+	color:#244500;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:0;
+	text-transform:uppercase;
+}
+#formulario label.error,#formulario2 label.error{
+    color: red;
+    float: left;
+    width: 100%;
+    height: auto;
+    display: inline;
+}
+#campo_existe,#campo_existe2,#campo_existe3,#campo_existe4,#campo_invalido{
+    display: none;
+    width: auto;
+    height: auto;
+    color: red;
+    margin-top: -10px;
+    font-size: 12px;
+}
+#info-corretor label.cadastro-m,#info-corretor label.cadastro-small,#info-corretor label.cadastro-all,#cad_empresa{
+    margin-bottom: 10px;
+}
+.est-cidade{
+    float: left;
+    width: 600px;
+}
+#cad-imagens{
+    float: left;
+}
+.form-home label{
+    margin-bottom: 10px;
+}
+#sigla{
+    text-transform: uppercase;
+}
+.pacote{
+    float: left;
+    width: 100%;
+}
+.pacote input{
+    float: left;
+    margin-top: 145px;
+}
+.pacote .box-pacote{
+    float: right;
+    width: 560px;
+    height: 200px;
+    border: 1px solid #aeb0b0;
+    color: #0a3558;
+    position: relative;
+    margin-top: 50px;
+}
+.pacote .box-pacote h3{
+    font-size: 20px;
+}
+.pacote .box-pacote h4{
+    font-size: 14px;
+    font-weight: normal;
+}
+.pacote .box-pacote h4,.pacote .box-pacote h3{
+    margin: 15px 0 0 20px;
+}
+.content .center .box-right .pacote .box-pacote p{
+    height: 45px;
+    width: 100%;
+    float: left;
+    background-color: #0b3458;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+.content .center .box-right .pacote .box-pacote p span{
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.content .center .box-right .pacote .box-pacote p span strong{
+    font-size: 38px;
+}
+.content .center .box-right form label.termo{
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+}
+.content .center .box-right form label.termo span{
+    font-size: 11px;
+}
+.content .center .box-right form label.termo span strong{
+    font-size: 13px;
+}

@@ -1,0 +1,120 @@
+Pagamento feito em 18/10/2011 às 17:08
+O status foi: VERIFICADO
+O valor foi: 50,00
+A status de pagamento foi: Cancelado
+O id foi: 11
+
+Pagamento feito em 28/10/2011 às 07:05
+O status foi: VERIFICADO
+O valor foi: 50,00
+A status de pagamento foi: Cancelado
+O id foi: 10
+
+Pagamento feito em 11/11/2011 às 16:14
+O status foi: VERIFICADO
+O valor foi: 50,00
+A status de pagamento foi: Cancelado
+O id foi: 20
+
+Pagamento feito em 17/11/2011 às 15:56
+O status foi: VERIFICADO
+O valor foi: 50,00
+A status de pagamento foi: Cancelado
+O id foi: 16
+
+Pagamento feito em 17/11/2011 às 16:04
+O status foi: VERIFICADO
+O valor foi: 275,00
+A status de pagamento foi: Cancelado
+O id foi: 17
+
+Pagamento feito em 17/11/2011 às 16:26
+O status foi: VERIFICADO
+O valor foi: 550,00
+A status de pagamento foi: Cancelado
+O id foi: 18
+
+Pagamento feito em 17/11/2011 às 17:28
+O status foi: VERIFICADO
+O valor foi: 275,00
+A status de pagamento foi: Cancelado
+O id foi: 19
+
+Pagamento feito em 18/11/2011 às 10:48
+O status foi: VERIFICADO
+O valor foi: 50,00
+A status de pagamento foi: Cancelado
+O id foi: 16
+
+Pagamento feito em 29/11/2011 às 08:32
+O status foi: VERIFICADO
+O valor foi: 2.100,00
+A status de pagamento foi: Em Análise
+O id foi: SERVICE
+
+Pagamento feito em 29/11/2011 às 12:45
+O status foi: VERIFICADO
+O valor foi: 2.100,00
+A status de pagamento foi: Aprovado
+O id foi: SERVICE
+
+Pagamento feito em 01/12/2011 às 13:59
+O status foi: VERIFICADO
+O valor foi: 3.800,00
+A status de pagamento foi: Em Análise
+O id foi: SERVICE
+
+Pagamento feito em 02/12/2011 às 17:19
+O status foi: VERIFICADO
+O valor foi: 3.800,00
+A status de pagamento foi: Aprovado
+O id foi: SERVICE
+
+Pagamento feito em 09/12/2011 às 17:29
+O status foi: VERIFICADO
+O valor foi: 3.465,00
+A status de pagamento foi: Em Análise
+O id foi: SERVICE
+
+Pagamento feito em 11/12/2011 às 19:40
+O status foi: VERIFICADO
+O valor foi: 3.465,00
+A status de pagamento foi: Aprovado
+O id foi: SERVICE
+
+Pagamento feito em 13/12/2011 às 12:49
+O status foi: VERIFICADO
+O valor foi: 2.100,00
+A status de pagamento foi: Completo
+O id foi: SERVICE
+
+Pagamento feito em 15/12/2011 às 12:51
+O status foi: VERIFICADO
+O valor foi: 4.000,00
+A status de pagamento foi: Em Análise
+O id foi: SERVICE
+
+Pagamento feito em 15/12/2011 às 16:21
+O status foi: VERIFICADO
+O valor foi: 4.000,00
+A status de pagamento foi: Cancelado
+O id foi: SERVICE
+
+Pagamento feito em 15/12/2011 às 22:03
+O status foi: VERIFICADO
+O valor foi: 4.000,00
+A status de pagamento foi: Em Análise
+O id foi: SERVICE
+
+Pagamento feito em 16/12/2011 às 11:29
+O status foi: VERIFICADO
+O valor foi: 4.000,00
+A status de pagamento foi: Aprovado
+O id foi: SERVICE
+
+Pagamento feito em 16/12/2011 às 17:27
+O status foi: VERIFICADO
+O valor foi: 3.800,00
+A status de pagamento foi: Completo
+O id foi: SERVICE
+

@@ -1,0 +1,35 @@
+#Ativa o mod rewrite
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(gif|jpg|png|css|js|pdf|xls|php|html|htm|txt)$ index.php
+
+#Ativa o Deflate
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+<Files *.html>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.css>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.xml>
+SetOutputFilter DEFLATE
+</Files>
+<Files *.js>
+SetOutputFilter DEFLATE
+</Files>
+
+#Aumentar velocidade do cache
+FileETag MTime Size
+
+#Configura 5 min de cache
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html M300
+ExpiresByType text/css M300
+ExpiresByType text/javascript M300
+ExpiresByType image/png M300
+ExpiresByType image/jpeg M300
+ExpiresByType image/gif M300
+ExpiresByType image/x-icon M300
+</IfModule>

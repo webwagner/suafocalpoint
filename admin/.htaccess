@@ -1,0 +1,2 @@
+#Desativa o mod rewrite
+RewriteEngine off
