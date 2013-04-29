@@ -235,17 +235,20 @@ function email($body, $subject, $mails, $redirect = "", $bcc = ""){
  * @param string|int|int|string|string|string $img|$w|$h|$alt|$marcadagua|$pos_marcadagua   
  * @return string
  */
-function ImgRender( $img, $w, $h, $alt = ''){
+function ImgRender( $img, $w, $h, $alt = '', $logotipo = ''){
 
      if(is_file($img))
         $tam_img = getimagesize($img);
      else
          return false;
      
+     //if($logotipo != "")
+         //$logotipo = "<img class='img_logotipo' src='".$logotipo."' />";
+     
      if($tam_img[1] > $tam_img[0])
-        return '<div class="box-img-phpthumb" style="overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&w='.$w.'" alt="'.$alt.'" /></div>';
+        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&w='.$w.'&fltr[]=wmi|'.$logotipo.'|BL&fltr[]=iar|0" alt="'.$alt.'" />'.$logotipo.'</div>';
      else
-        return '<div class="box-img-phpthumb" style="overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&h='.$h.'" alt="'.$alt.'" /></div>';  
+        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&h='.$h.'&fltr[]=wmi|'.$logotipo.'|BL&fltr[]=iar|0" alt="'.$alt.'" />'.$logotipo.'</div>';  
 }
 
 /**
