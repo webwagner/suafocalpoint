@@ -95,6 +95,47 @@ if(isset($_POST['nome'])){
             $foto = '';       
         }
     }
+    
+    if(isset($_SESSION['dados']['logotipo'])){
+        $destino_f = URL_ABSOLUTE.'static/uploads/logotipos/'.$login;
+        
+        if($_FILES['logotipo']['name'] != ''){
+            if($_SESSION['dados']['logotipo'] != "")
+                if(is_file(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor'].'/'.$_SESSION['dados']['logotipo']))
+                    unlink(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor'].'/'.$_SESSION['dados']['logotipo']);
+
+            if($_SESSION['dados']['login_corretor'] != $login)  
+                if(is_dir(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor']))
+                    rename(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor'],$destino_f);
+            
+            if(!is_dir($destino_f))
+                cria_dir($destino_f);
+
+            $logotipo = upload('logotipo',$destino_f.'/');
+        }
+        else{
+            $logotipo = $_SESSION['dados']['logotipo'];
+            
+            if($_SESSION['dados']['login_corretor'] != $login)  
+                if(is_dir(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor']))
+                    rename(URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor'],$destino_f);
+            
+        }
+    }
+    else{
+        if($_FILES['foto']['name'] != ''){
+            $destino_f = URL_ABSOLUTE.'static/uploads/logotipos/'.$login;
+
+            if(!is_dir($destino_f))
+                cria_dir($destino_f);
+
+            $logotipo = upload('logotipo',$destino_f.'/');
+
+        }
+        else{    
+            $logotipo = '';       
+        }
+    }
 
     $arr = array(
                 'nome' => $_POST['nome'], 
@@ -116,6 +157,7 @@ if(isset($_POST['nome'])){
                 'telefone2' => $_POST['ddd2'].' '.$_POST['telefone2'],
                 'celular2' => $_POST['ddd_celular2'].' '.$_POST['celular2'],
                 'foto_perfil' => $foto,
+                'logotipo' => $logotipo,
                 'ativado' => 'NAO',
                 'website' => $_POST['website'],
           );   
