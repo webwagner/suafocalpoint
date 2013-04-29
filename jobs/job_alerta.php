@@ -1,5 +1,5 @@
 <?php
-include('/new/inc/init.inc.php');
+include('inc/init.inc.php');
 
 $mapper = new Mapper();
 $mapper->setDbTable(new Alerta());
