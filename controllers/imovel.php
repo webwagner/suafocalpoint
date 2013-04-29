@@ -189,7 +189,12 @@ if($imovel = $mapper->getRow()){
                 else                
                     $img = '<img src="static/img/img-imoveis.jpg" alt="'.$imovel->titulo.'" />';              
 
-                $html_fotos .= '<li id="ft_imov_'.$j.'" rel="'.$j.'" '.$style1.' ><a class="lightbox" title="'.$imovel->titulo.'" href="library/phpthumb/phpThumb.php?src='.$img.'&w=800">'.ImgRender($img, 353, 249, $imovel->titulo).'</a><p style="margin-top:5px;">'.$legenda.'</p></li>';
+                if($_SESSION['usuario_logado']->logotipo != "")
+                    $logotipo = URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['usuario_visitado']->login.'/'.$_SESSION['usuario_visitado']->logotipo;
+                else
+                    $logotipo = "";
+                
+                $html_fotos .= '<li id="ft_imov_'.$j.'" rel="'.$j.'" '.$style1.' ><a class="lightbox" title="'.$imovel->titulo.'" href="library/phpthumb/phpThumb.php?src='.$img.'&w=800">'.ImgRender($img, 353, 249, $imovel->titulo, $logotipo).'</a><p style="margin-top:5px;">'.$legenda.'</p></li>';
             
             }
             
