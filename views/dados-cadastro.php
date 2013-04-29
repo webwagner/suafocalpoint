@@ -574,7 +574,7 @@
                     
                     <div id="cad-imagens">
                         <div class="foto">
-                            <span>Envie sua foto/logotipo:</span>
+                            <span>Envie sua foto:</span>
                             <?php 
                             if(isset($_SESSION['dados']['foto_perfil']) && $_SESSION['dados']['foto_perfil'] != ""){
                                 $img = URL_ABSOLUTE.'static/uploads/fotos/'.$_SESSION['dados']['login_corretor'].'/'.$_SESSION['dados']['foto_perfil'];
@@ -589,7 +589,24 @@
                             <input type="file" name="foto" class="photo" />
                             <span class="button">Choose a Photo</span>
                             </span>
-                        </div>                     
+                        </div> 
+                        <div class="foto">
+                            <span>Envie seu logotipo:</span>
+                            <?php 
+                            if(isset($_SESSION['dados']['logotipo']) && $_SESSION['dados']['logotipo'] != ""){
+                                $img = URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['dados']['login_corretor'].'/'.$_SESSION['dados']['logotipo'];
+                                echo ImgRender($img, 92, 92, $_SESSION['dados']['nome']);
+                            }
+                            else{
+                                echo '<img src="static/img/foto.jpg" width="92" height="92" alt="Sua Foto" title="Sua Foto" />';
+                            }
+                            ?>
+                            <span class="tx">Selecione um arquivo de imagem de seu computador <font>(No máximo 2MB)</font></span>
+                            <span class="file-wrapper">
+                            <input type="file" name="logotipo" class="photo" />
+                            <span class="button">Choose a Photo</span>
+                            </span>
+                        </div> 
                     </div>
                 </div>
 
