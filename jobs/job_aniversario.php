@@ -1,5 +1,5 @@
 <?php
-include('inc/init.inc.php');
+include('/home/suafocalpoint/public_html/new/inc/init.inc.php');
 
 $mapper = new Mapper();
 $mapper->setDbTable(new Corretor());
