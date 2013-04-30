@@ -241,14 +241,11 @@ function ImgRender( $img, $w, $h, $alt = '', $logotipo = ''){
         $tam_img = getimagesize($img);
      else
          return false;
-     
-     //if($logotipo != "")
-         //$logotipo = "<img class='img_logotipo' src='".$logotipo."' />";
-     
+
      if($tam_img[1] > $tam_img[0])
-        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&w='.$w.'&fltr[]=wmi|'.$logotipo.'|BL&fltr[]=iar|0" alt="'.$alt.'" />'.$logotipo.'</div>';
+        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&w='.$w.'&fltr[]=wmi|'.$logotipo.'|BL" alt="'.$alt.'" />'.$logotipo.'</div>';
      else
-        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&h='.$h.'&fltr[]=wmi|'.$logotipo.'|BL&fltr[]=iar|0" alt="'.$alt.'" />'.$logotipo.'</div>';  
+        return '<div class="box-img-phpthumb" style="position: relative; overflow:hidden; width:'.$w.'px; height:'.$h.'px;"><img src="'.URL.'library/phpthumb/phpThumb.php?src='.$img.'&h='.$h.'&fltr[]=wmi|'.$logotipo.'|BL" alt="'.$alt.'" />'.$logotipo.'</div>';  
 }
 
 /**
@@ -285,42 +282,4 @@ function convertPreco($valor){
     $valor = str_replace('.', '', $valor);
     $ret = str_replace(',', '.', $valor);
     return $ret;
-}
-
-function Redimensionar($imagem, $largura, $pasta){
-		
-    $name = md5(uniqid(rand(),true));
-
-    if ($imagem['type']=="image/jpeg"){
-            $img = imagecreatefromjpeg($imagem['tmp_name']);
-    }
-    else if ($imagem['type']=="image/gif"){
-            $img = imagecreatefromgif($imagem['tmp_name']);
-    }
-    else if ($imagem['type']=="image/png"){
-            $img = imagecreatefrompng($imagem['tmp_name']);
-    }
-    
-    $x   = imagesx($img);
-    $y   = imagesy($img);
-    $autura = ($largura * $y)/$x;
-
-    $nova = imagecreatetruecolor($largura, $autura);
-    imagecopyresampled($nova, $img, 0, 0, 0, 0, $largura, $autura, $x, $y);
-
-    if ($imagem['type']=="image/jpeg"){
-            $local="$pasta/$name".".jpg";
-            imagejpeg($nova, $local);
-    }else if ($imagem['type']=="image/gif"){
-            $local="$pasta/$name".".gif";
-            imagejpeg($nova, $local);
-    }else if ($imagem['type']=="image/png"){
-            $local="$pasta/$name".".png";
-            imagejpeg($nova, $local);
-    }		
-
-    imagedestroy($img);
-    imagedestroy($nova);	
-
-    return $local;
 }
