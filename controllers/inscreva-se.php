@@ -111,7 +111,7 @@ if(isset($_POST['nome'])){
             if(!is_dir($destino_f))
                 cria_dir($destino_f);
 
-            $logotipo = upload('logotipo',$destino_f.'/');
+            $logotipo = upload('logotipo',$destino_f.'/',true,100);
         }
         else{
             $logotipo = $_SESSION['dados']['logotipo'];
@@ -129,8 +129,8 @@ if(isset($_POST['nome'])){
             if(!is_dir($destino_f))
                 cria_dir($destino_f);
 
-            $logotipo = upload('logotipo',$destino_f.'/');
-
+            $logotipo = upload('logotipo',$destino_f.'/',true,100);
+            
         }
         else{    
             $logotipo = '';       
