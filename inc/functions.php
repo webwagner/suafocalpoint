@@ -172,7 +172,7 @@ function url( $num = 1 ){
     $uri = $_SERVER['REQUEST_URI'];
     $url = explode("/", $uri);
     unset($url[0]);
-    if($_SERVER['SERVER_NAME'] == 'localhost' || $url[1] == 'new')
+    if($_SERVER['SERVER_NAME'] == 'localhost' || $url[1] == 'demo')
         $num = $num + 1;
     if($num > count($url))
         $num = count($url);
