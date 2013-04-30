@@ -194,7 +194,7 @@ if($imovel = $mapper->getRow()){
                 else
                     $logotipo = "";
                 
-                $html_fotos .= '<li id="ft_imov_'.$j.'" rel="'.$j.'" '.$style1.' ><a class="lightbox" title="'.$imovel->titulo.'" href="library/phpthumb/phpThumb.php?src='.$img.'&w=800">'.ImgRender($img, 353, 249, $imovel->titulo, $logotipo).'</a><p style="margin-top:5px;">'.$legenda.'</p></li>';
+                $html_fotos .= '<li id="ft_imov_'.$j.'" rel="'.$j.'" '.$style1.' ><a class="lightbox" title="'.$imovel->titulo.'" href="library/phpthumb/phpThumb.php?src='.$img.'&w=800&fltr[]=wmi|'.$logotipo.'|BL">'.ImgRender($img, 353, 249, $imovel->titulo, $logotipo).'</a><p style="margin-top:5px;">'.$legenda.'</p></li>';
             
             }
             
