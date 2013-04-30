@@ -11,14 +11,24 @@
         <form action="" method="post" id="formulario" enctype="multipart/form-data">
         
             <div class="foto">
-                <span class="span-cad-album">Envie sua foto/logotipo:</span>
+                <span class="span-cad-album">Envie sua foto:</span>
                 <?php echo $foto;?>
                 <span class="tx span-cad-album">Selecione um arquivo de imagem de seu computador <font>(No máximo 2MB)</font></span>
                 <span class="file-wrapper">
                   <input type="file" name="foto" class="photo" />
                   <span class="button">Choose a Photo</span>
                 </span>
-            </div>  
+            </div>
+            
+            <div class="foto">
+                <span class="span-cad-album">Envie seu logotipo:</span>
+                <?php echo $logotipo;?>
+                <span class="tx span-cad-album">Selecione um arquivo de imagem de seu computador <font>(No máximo 2MB)</font></span>
+                <span class="file-wrapper">
+                  <input type="file" name="logotipo" class="photo" />
+                  <span class="button">Choose a Photo</span>
+                </span>
+            </div>
                                   
             <br clear="all" />
             <br clear="all" />
