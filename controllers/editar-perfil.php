@@ -22,6 +22,15 @@ if(isset($_SESSION['usuario_visitado']->login) && $_SESSION['usuario_visitado']-
             $foto = URL_ABSOLUTE.'static/img/perfil-focalpoint.jpg';             
             $foto = ImgRender($foto, 92, 92, $dados->nome);
         }
+        
+        if($dados->logotipo != ""){
+            $logotipo = URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['usuario_visitado']->login.'/'.$_SESSION['usuario_visitado']->logotipo;             
+            $logotipo = ImgRender($logotipo, 92, 92, $dados->nome);
+        }
+        else{
+            $logotipo = URL_ABSOLUTE.'static/img/perfil-focalpoint.jpg';             
+            $logotipo = ImgRender($logotipo, 92, 92, $dados->nome);
+        }
 
         $ddd = '('.substr($dados->telefone,1,2).')';
         $tel = substr($dados->telefone,-9);
@@ -194,9 +203,28 @@ if(isset($_SESSION['usuario_visitado']->login) && $_SESSION['usuario_visitado']-
                 $mapper = new Mapper();
                 $mapper->setDbTable(new Corretor);
                 $mapper->saveOrUpdate($arr);
-                
-                echo '<script>location.href = "'.$_SESSION['usuario_visitado']->login.'/editar-perfil/dados-imagem";</script>'; 
             }
+            
+            if($_FILES['logotipo']['name'] != ""){
+                $destino_f = URL_ABSOLUTE.'static/uploads/logotipos/'.$_SESSION['usuario_visitado']->login.'/';
+                
+                if(!is_dir($destino_f))
+                    cria_dir($destino_f);
+                
+                $logotipo = upload('logotipo',$destino_f,true,100);
+                
+                if($dados->logotipo != "")
+                    if(is_file($destino_f.$dados->logotipo))
+                        unlink($destino_f.$dados->logotipo);
+
+                $arr = array("id" => $dados->id, "logotipo" => $logotipo);
+                
+                $mapper = new Mapper();
+                $mapper->setDbTable(new Corretor);
+                $mapper->saveOrUpdate($arr);
+            }
+            
+            echo '<script>location.href = "'.$_SESSION['usuario_visitado']->login.'/editar-perfil/dados-imagem";</script>'; 
         }        
         
         if((isset($_POST['plano_id'])) || isset($_POST['pacote_id']))
