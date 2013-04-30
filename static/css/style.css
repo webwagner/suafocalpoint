@@ -2934,19 +2934,3 @@ ul.menu-dados li.hover a, ul.menu-dados li:hover a{
 .pacote .box-pacote p span strong{
     font-size: 38px;
 }
-.img_logotipo{
-    width: 25%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 10px;
-    opacity:0.50;
-    -moz-opacity: 0.50;
-    filter: alpha(opacity=50);
-}
-#content .page .imoveis-fotos .fotos .c-fotos ul li{
-    text-align: left;
-}
-.box-img-phpthumb{
-    padding-left: 10px;
-}
